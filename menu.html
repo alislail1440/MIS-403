@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Crumb | Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-branding">
+      <span class="brand-mark">&#127849;</span>
+      <div>
+        <p class="eyebrow">The Daily Crumb</p>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./menu.html" class="nav-link">Menu</a></li>
+        <li><a href="./checkout.html" class="nav-link">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-large">
+      <header class="section-header">
+        <p class="eyebrow">Bakery menu</p>
+        <h2>Choose your favorites for pickup</h2>
+        <p>Each item is baked fresh daily. Add to your box and move to checkout when ready.</p>
+      </header>
+
+      <div id="menu-grid" class="card-grid" aria-live="polite">
+        <!-- Menu cards are injected here by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 The Daily Crumb. Your order is ready when you are.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

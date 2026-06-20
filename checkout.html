@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Crumb | Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-branding">
+      <span class="brand-mark">&#127849;</span>
+      <div>
+        <p class="eyebrow">The Daily Crumb</p>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./menu.html" class="nav-link">Menu</a></li>
+        <li><a href="./checkout.html" class="nav-link">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-layout section-large">
+      <div class="checkout-left">
+        <header class="section-header">
+          <p class="eyebrow">Order review</p>
+          <h2>Your box items</h2>
+          <p>Select quantities or remove items before pickup.</p>
+        </header>
+
+        <div id="cart-items" class="cart-list" aria-live="polite">
+          <!-- Cart items are inserted here by JavaScript -->
+        </div>
+      </div>
+
+      <aside class="checkout-right">
+        <div class="summary-card">
+          <h2>Pickup summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="cart-total">SAR 0.00</strong>
+          </div>
+          <form id="order-form" novalidate>
+            <label for="pickup-time">Pickup time</label>
+            <input type="time" id="pickup-time" name="pickup-time" required>
+            <p id="pickup-feedback" class="helper-text">Your earliest pickup time is calculated automatically.</p>
+
+            <div id="form-error" class="form-error" aria-live="assertive"></div>
+
+            <button type="submit" class="button button-primary">Place Order</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 The Daily Crumb. Ready to collect with confidence.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

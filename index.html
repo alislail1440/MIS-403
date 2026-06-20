@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Crum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-branding">
+      <span class="brand-mark">&#127849;</span>
+      <div>
+        <p class="eyebrow">The Daily Crumb</p>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./menu.html" class="nav-link">Menu</a></li>
+        <li><a href="./checkout.html" class="nav-link">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-large">
+      <div class="hero-copy">
+        <p class="eyebrow">Fresh every morning</p>
+        <h2>Warm pastries, made easy.</h2>
+        <p>Order ahead, pick up on your schedule, and treat your day to the comfort of artisan bakery favorites.</p>
+        <a href="./menu.html" class="button button-primary">View Menu</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card" id="hero-slideshow">
+          <div class="slideshow-track" id="hero-slides" aria-live="off"></div>
+          <button class="slideshow-prev" id="hero-prev" aria-label="Previous slide">‹</button>
+          <button class="slideshow-next" id="hero-next" aria-label="Next slide">›</button>
+          <div class="slideshow-dots" id="hero-dots" aria-hidden="false"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-medium specials" aria-labelledby="specials-heading">
+      <header class="section-header">
+        <p class="eyebrow">Daily Specials</p>
+        <h2 id="specials-heading">Taste today’s featured delights</h2>
+      </header>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-image card-image-large">
+            <img src="/assets/menu/butter_croissant.jpg" alt="Butter Croissant">
+          </div>
+          <div class="card-content">
+            <h3>Butter Croissant</h3>
+            <p>Flaky layers with a golden finish and a buttery, melt-in-your-mouth center.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image card-image-large">
+            <img src="/assets/menu/chocolate_cake.jpg" alt="Velvet Chocolate Cake">
+          </div>
+          <div class="card-content">
+            <h3>Velvet Chocolate Cake</h3>
+            <p>Rich, tender cake with a silky ganache finish that pairs perfectly with coffee.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image card-image-large">
+            <img src="/assets/menu/sourdough_bread.jpg" alt="Rustic Sourdough">
+          </div>
+          <div class="card-content">
+            <h3>Rustic Sourdough</h3>
+            <p>Crusty outside, chewy inside, baked fresh and ready to slice at home.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 The Daily Crumb. Order ahead, collect with ease.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
